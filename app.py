@@ -69,12 +69,12 @@ destination_file_system='<DESTINATION_FILE_SYSTEM>'
 
 
 try:
-    adls_agvicenergysmartfarming_key=os.environ['<DESTINATION_CREDENTIALS>']
+    destination_adls_credentials=os.environ['<DESTINATION_ADLS_CREDENTIALS>']
 except:
     pass
-adls_agvicenergysmartfarming_key='<DESTINATION_ADLS_CREDENTIALS>'
+destination_adls_credentials='<DESTINATION_ADLS_CREDENTIALS>'
 
 
-write_response(file_name,payload_df_csv,destination_file_system,destination_storage_folder_name,destination_storage_account_name, adls_agvicenergysmartfarming_key)
+write_response(file_name,payload_df_csv,destination_file_system,destination_storage_folder_name,destination_storage_account_name, destination_adls_credentials>)
 
 
